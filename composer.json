@@ -1,0 +1,14 @@
+{
+    "name": "test/test",
+    "autoload": {
+        "psr-4": {
+            "Test\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tee"
+        }
+    ],
+    "require": {}
+}

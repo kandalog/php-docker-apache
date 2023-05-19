@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  php:
+  app:
     build:
       context: .
       dockerfile: ./php/Dockerfile
@@ -9,7 +9,7 @@ services:
       - db
     volumes:
       - ./php/php.ini:/usr/local/etc/php/php.ini
-      - ./html:/var/www/html
+      - ./:/usr/src/myapp
     ports:
       - "8080:80"
     environment:
